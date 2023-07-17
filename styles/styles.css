@@ -13,8 +13,23 @@ body {
   margin: 0 auto;
 }
 /* Header styles */
+header {
+  padding: 50px 120px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 nav h3 {
   color: #3a3a3a;
   font-size: 1.5rem;
   font-weight: 700;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 2rem;
 }
