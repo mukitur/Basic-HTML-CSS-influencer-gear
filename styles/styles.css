@@ -70,7 +70,20 @@ nav ul li {
   text-align: center;
   width: 100%;
 }
-
+/* Main section start */
+main {
+  padding: 50px 210px;
+  margin: 0 auto;
+}
+.brands {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  gap: 50px;
+}
+.brands img {
+  width: 100%;
+}
 /* Responsive  */
 
 /* Mobile device */
@@ -82,7 +95,8 @@ nav ul li {
     flex-direction: column-reverse;
     align-items: center;
   }
-  header {
+  header,
+  main {
     padding: 1.2rem;
   }
   nav ul li {
@@ -92,6 +106,15 @@ nav ul li {
   .banner-container,
   .banner-title {
     text-align: center;
+  }
+  .banner-container p {
+    width: auto;
+  }
+  .brands {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .brands img {
+    margin: auto;
   }
 }
 
@@ -106,5 +129,15 @@ nav ul li {
   }
   .banner-title p {
     text-align: center;
+  }
+  .banner-container,
+  .banner-title {
+    text-align: center;
+  }
+  .banner-container p {
+    width: auto;
+  }
+  .brands {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
